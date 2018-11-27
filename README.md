@@ -4,6 +4,9 @@ This app adds support for Aeotec devices in Homey.
 
 ### Changelog:
 
+**1.6.7**
+* added support for Home Energy Meter Gen5
+
 **1.6.6**
 * added product IDs for the LED bulb and the garage door controller
 

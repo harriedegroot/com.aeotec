@@ -1,0 +1,249 @@
+{
+  "id": "ZW095",
+  "name": {
+	"en": "Home Energy Meter Gen5"
+  },
+  "zwave": {
+	"manufacturerId": [
+	  134
+	],
+	"productTypeId": [
+	  2
+	],
+	"productId": [
+	  95
+	],
+	"learnmode": {
+	  "instruction": {
+		"en": "Turn the primary controller of Z-Wave network into inclusion mode, short press the product’s Action button that you can find on the product's housing."
+	  }
+	},
+	"associationGroups": [
+	  1
+	],
+	"associationGroupsOptions": {
+		"1": {
+			"hint": {
+			  "en": "Z-Wave Plus Lifeline.\r\n\r\nThe automatic reports (configured by parameter 101/102/103) can be sent to the associated nodes in association group 1."
+			}
+		}
+	}
+  },
+  "images": {
+	"large": "/drivers/ZW095C/assets/images/large.png",
+	"small": "/drivers/ZW095C/assets/images/small.png"
+  },
+  "class": "sensor",
+  "capabilities": [
+	"measure_power",
+	"meter_power",
+	"measure_voltage",
+	"measure_current"
+  ],
+  "settings": [
+	{
+	  "id": 10,
+	  "value": 10,
+	  "label": {
+		"en": "Percentage change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Percentage change in wattage to induce a automatic report for the power report of Clamp 2."
+	  },
+	  "_size": 1,
+	  "type": "number"
+	},
+	{
+	  "id": 101,
+	  "value": 2,
+	  "label": {
+		"en": "To set which report need to be sent."
+	  },
+	  "hint": {
+		"en": "To set which report need to be sent in Report group 1."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 102,
+	  "value": 1,
+	  "label": {
+		"en": "To set which report need to be sent."
+	  },
+	  "hint": {
+		"en": "To set which report need to be sent in Report group 2."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 103,
+	  "value": 0,
+	  "label": {
+		"en": "To set which report need to be sent."
+	  },
+	  "hint": {
+		"en": "To set which report need to be sent in Report group 3."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 111,
+	  "value": 5,
+	  "label": {
+		"en": "Set the interval time of sending report."
+	  },
+	  "hint": {
+		"en": "Set the interval time of sending report in Report group 1."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 112,
+	  "value": 120,
+	  "label": {
+		"en": "Set the interval time of sending report."
+	  },
+	  "hint": {
+		"en": "Set the interval time of sending report in Report group 2."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 113,
+	  "value": 120,
+	  "label": {
+		"en": "Set the interval time of sending report."
+	  },
+	  "hint": {
+		"en": "Set the interval time of sending report in Report group 3."
+	  },
+	  "_size": 4,
+	  "type": "number"
+	},
+	{
+	  "id": 2,
+	  "value": 0,
+	  "label": {
+		"en": "Set the energy detection mode for parameter 101 to 103."
+	  },
+	  "hint": {
+		"en": "Set the energy detection mode for the measure reports of parameter 101 to 103."
+	  },
+	  "_size": 1,
+	  "type": "number"
+	},
+	{
+	  "id": 200,
+	  "value": true,
+	  "label": {
+		"en": "Partner  ID"
+	  },
+	  "hint": {
+		"en": "Partner  ID."
+	  },
+	  "_size": 1,
+	  "type": "checkbox"
+	},
+	{
+	  "id": 252,
+	  "value": true,
+	  "label": {
+		"en": "Enable/Disable Lock Configuration"
+	  },
+	  "hint": {
+		"en": "Enable/Disable Lock Configuration."
+	  },
+	  "_size": 1,
+	  "type": "checkbox"
+	},
+	{
+	  "id": 255,
+	  "value": true,
+	  "label": {
+		"en": "Reset to default factory setting"
+	  },
+	  "hint": {
+		"en": "Reset to default factory setting."
+	  },
+	  "_size": 4,
+	  "type": "checkbox"
+	},
+	{
+	  "id": 3,
+	  "value": true,
+	  "label": {
+		"en": "Enable/disable selective reporting only when power change reaches a certain threshold or percentage"
+	  },
+	  "hint": {
+		"en": "Enable/disable selective reporting only when power change reaches a certain threshold or percentage set in parameter 4 to 11. "
+	  },
+	  "_size": 1,
+	  "type": "checkbox"
+	},
+	{
+	  "id": 4,
+	  "value": 50,
+	  "label": {
+		"en": "Threshold change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Threshold change in wattage to induce a automatic report for total power report."
+	  },
+	  "_size": 2,
+	  "type": "number"
+	},
+	{
+	  "id": 5,
+	  "value": 50,
+	  "label": {
+		"en": "Threshold change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Threshold change in wattage to induce a automatic report for the power report of Clamp 1."
+	  },
+	  "_size": 2,
+	  "type": "number"
+	},
+	{
+	  "id": 6,
+	  "value": 50,
+	  "label": {
+		"en": "Threshold change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Threshold change in wattage to induce a automatic report for the power report of Clamp 2."
+	  },
+	  "_size": 2,
+	  "type": "number"
+	},
+	{
+	  "id": 8,
+	  "value": 10,
+	  "label": {
+		"en": "Percentage change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Percentage change in wattage to induce a automatic report for total power report."
+	  },
+	  "_size": 1,
+	  "type": "number"
+	},
+	{
+	  "id": 9,
+	  "value": 10,
+	  "label": {
+		"en": "Percentage change in wattage to induce a automatic report "
+	  },
+	  "hint": {
+		"en": "Percentage change in wattage to induce a automatic report for the power report of Clamp 1."
+	  },
+	  "_size": 1,
+	  "type": "number"
+	}
+  ]
+}
